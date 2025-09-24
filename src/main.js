@@ -33,11 +33,11 @@ if (audioYesBtn && audioNoBtn && audioPrompt) {
     } catch (err) {
       console.warn('Audio play was blocked by the browser. This usually requires user interaction.', err);
     }
-    audioPrompt.classList.add('hidden');
+    audioPrompt.style.display = 'none';
   });
 
   audioNoBtn.addEventListener('click', () => {
-    audioPrompt.classList.add('hidden');
+    audioPrompt.style.display = 'none';
   });
 }
 
